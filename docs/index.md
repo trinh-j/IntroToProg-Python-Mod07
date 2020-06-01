@@ -69,7 +69,7 @@ Similar to the pickle module, before we can use any functions associated with ex
 Below (Figure 5) try-except blocks are used to sift through errors, from most to least specific. The first try-except block finds errors with file-handling, while the second try-error block looks for errors regarding saving/writing data to the binary file. 
 
 ![Figure 5](/docs/fig05.png "Figure 5")
-Figure 5. Try and except blocks to catch errors in the program and display error messages in a user-friendly manner. 
+##### Figure 5. Try and except blocks to catch errors in the program and display error messages in a user-friendly manner. 
 
 Using pickling and exception handling, we can piece together a script. For this assignment, I have created a script (Figure 6) to ask the end-user for (Basketball) player numbers and names. 
 
