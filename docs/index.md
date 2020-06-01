@@ -170,7 +170,7 @@ Below (Figure 8), the program is ran for the second time, this time in the IDE c
 
 To confirm that the end-user’s data is saved to a binary file, we can go to the file directory and open the binary file in a text editor (Figure 9). We can see that upon opening the .dat file in a notepad, that the data in it is encripted. 
  
-![Figure 9](docs/Doc_Figs/fig09.png "Figure 9")
+![Figure 9](/docs/Doc_Figs/fig09.png "Figure 9")
 ##### Figure 9. Binary file TextFile.dat located in program directory. File is opened in a notepad (right side of figure) with encrypted data. 
 
 ## Summary/Discussion
