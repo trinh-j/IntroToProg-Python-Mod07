@@ -35,7 +35,7 @@ In order to pickle the object, you need to import the module first:
 
 Once imported, you can now access classes and functions associated with the pickle module. To understand the module in greater detail and see available classes and functions, you can type in help(‘pickle’) in your console window just as I have done below and/or visit the [link](https://docs.python.org/3.7/library/pickle.html) listed under MODULE REFERECE (Figure 2).
 
- ![Figure 2](https://github.com/trinh-j/IntroToProg-Python-Mod07/blob/master/docs/Doc_Figs/fig02.png "Figure 2")
+ ![Figure 2](/docs/Doc_Figs/fig02.png "Figure 2")
 ##### Figure 2. Partial output of help(‘pickle’) in IDE PyCharm console. 
 
 
@@ -54,7 +54,7 @@ Using the Pickle module, you can write to and read data from a binary file. Ther
 
 To demonstrate how data is written to and read from a file, I will use the dump() and load() functions. 
 
-![Figure 4](https://github.com/trinh-j/IntroToProg-Python-Mod07/blob/master/docs/Doc_Figs/fig04.png "Figure 4")
+![Figure 4](/docs/Doc_Figs/fig04.png "Figure 4")
 ##### Figure 4. Two Pickle functions, dump() and load(), used in developer-defined functions to write and read binary data. 
 
 For the first function, write_data_to_file, a file object is created using the .open() function, which takes a file, file_name, and access mode, ‘wb’, as arguments.  Next we reference the pickle module and call out the function dump, with pickle.dump(). This function’s parameters are an object—what you want to dump, and a file—where you want to dump it (see Figure 3); the object passed in this function will be serialized and stored to the given file. Lastly, for this function, we close the file. 
@@ -68,7 +68,7 @@ Errors fall into different levels, from generic to specific. The format of a try
 Similar to the pickle module, before we can use any functions associated with exception handling we need to import the sys module using import sys [4]. 
 Below (Figure 5) try-except blocks are used to sift through errors, from most to least specific. The first try-except block finds errors with file-handling, while the second try-error block looks for errors regarding saving/writing data to the binary file. 
 
-![Figure 5](https://github.com/trinh-j/IntroToProg-Python-Mod07/blob/master/docs/Doc_Figs/fig05.png "Figure 5")
+![Figure 5](/docs/Doc_Figs/fig05.png "Figure 5")
 Figure 5. Try and except blocks to catch errors in the program and display error messages in a user-friendly manner. 
 
 Using pickling and exception handling, we can piece together a script. For this assignment, I have created a script (Figure 6) to ask the end-user for (Basketball) player numbers and names. 
@@ -161,17 +161,17 @@ while counter < len(FileAccess.read_data_from_file(strFileName)): #lists all ite
 
 To confirm that the script functions in not only the IDE console, I tested it in the command line (Figure 7). As you can see, the binary file did not exist, so a message was produced from the first try-except block in figure 5. Once bypassed, the program creates the file itself and proceeds to ask the user for information to store into the newly created binary file. 
  
-![Figure 7](https://github.com/trinh-j/IntroToProg-Python-Mod07/blob/master/docs/Doc_Figs/fig07.png "Figure 7")
+![Figure 7](/docs/Doc_Figs/fig07.png "Figure 7")
 ##### Figure 7. Script executed in the command line.
 
 Below (Figure 8), the program is ran for the second time, this time in the IDE console. Since the binary file has already been created, the program is able to locate the file and use it to append more end-user data. Here, we have added Player 23, Magic Johnson, and appended this list to our existing data from the binary file. 
  
-![Figure 8](https://github.com/trinh-j/IntroToProg-Python-Mod07/blob/master/docs/Doc_Figs/fig08.png "Figure 8")
+![Figure 8](/docs/Doc_Figs/fig08.png "Figure 8")
 ##### Figure 8. Script executed in the IDE PyCharm console.
 
 To confirm that the end-user’s data is saved to a binary file, we can go to the file directory and open the binary file in a text editor (Figure 9). We can see that upon opening the .dat file in a notepad, that the data in it is encripted. 
  
-![Figure 9](https://github.com/trinh-j/IntroToProg-Python-Mod07/blob/master/docs/Doc_Figs/fig09.png "Figure 9")
+![Figure 9](/docs/Doc_Figs/fig09.png "Figure 9")
 ##### Figure 9. Binary file TextFile.dat located in program directory. File is opened in a notepad (right side of figure) with encrypted data. 
 
 ## Summary/Discussion
