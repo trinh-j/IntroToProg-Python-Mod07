@@ -35,7 +35,7 @@ In order to pickle the object, you need to import the module first:
 
 Once imported, you can now access classes and functions associated with the pickle module. To understand the module in greater detail and see available classes and functions, you can type in help(‘pickle’) in your console window just as I have done below and/or visit the [link](https://docs.python.org/3.7/library/pickle.html) listed under MODULE REFERECE (Figure 2).
 
-![Figure 2](/docs/Doc_Figs/fig02.png "Figure 2")
+![Figure 2](fig02.png "Figure 2")
 ##### Figure 2. Partial output of help(‘pickle’) in IDE PyCharm console. 
 
 
