@@ -30,7 +30,7 @@ What is Pickle? You’re not wrong if your answer was the tangy, zesty refreshin
 In order to pickle the object, you need to import the module first:
 
 
-  ![Figure 1](https://github.com/trinh-j/IntroToProg-Python-Mod07/blob/master/docs/Doc_Figs/fig01.png "Figure 1")
+  ![Figure 1](/docs/Doc_Figs/fig01.png "Figure 1")
 ##### Figure 1. Import pickle module in python script (prior to accessing functions). 
 
 Once imported, you can now access classes and functions associated with the pickle module. To understand the module in greater detail and see available classes and functions, you can type in help(‘pickle’) in your console window just as I have done below and/or visit the [link](https://docs.python.org/3.7/library/pickle.html) listed under MODULE REFERECE (Figure 2).
@@ -49,7 +49,7 @@ When data is pickled and written to a binary file, it is written in a format com
 Using the Pickle module, you can write to and read data from a binary file. There are four functions associated with the Pickle module—load(), loads(), dump() and dumps()—each with pre-specified parameters (Figure 3). 
 
 
-![Figure 3](https://github.com/trinh-j/IntroToProg-Python-Mod07/blob/master/docs/Doc_Figs/fig03.png "Figure 3")
+![Figure 3](/docs/Doc_Figs/fig03.png "Figure 3")
 ##### Figure 3. Functions in pickle module.
 
 To demonstrate how data is written to and read from a file, I will use the dump() and load() functions. 
