@@ -41,9 +41,9 @@ Once imported, you can now access classes and functions associated with the pick
 
 ## File Object Types
 
-Text (.txt)
+### Text (.txt)
 In all of our assignments leading up to this one, we have been working with text files, from which we read and to which we write unprocessed data. Data in a text file is stored as a sequence of characters [3]. Common access/editing modes accompanied with opening a file are “a” for append, “r” for read, and “w” for write. Text files use the .txt extension. 
-Binary (.dat)
+### Binary (.dat)
 When data is pickled and written to a binary file, it is written in a format comparable to that of computer memory [3]. Similar to creating a text file, creating a file object for pickled data uses the .open() function. However, the most notable difference is that the comparable access/editing modes for binary files, instead, are —“ab” for append, “rb” for read, and “wb” for write; the “b” standing for byte. Binary files use the .dat extension. 
 
 Using the Pickle module, you can write to and read data from a binary file. There are four functions associated with the Pickle module—load(), loads(), dump() and dumps()—each with pre-specified parameters (Figure 3). 
