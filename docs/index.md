@@ -1,4 +1,4 @@
-# Module 07 Assignment
+# Module 07 Assignment: Binary Files, Pickling, and Error Handling
 
 ## Content Outline
 
