@@ -58,13 +58,17 @@ To demonstrate how data is written to and read from a file, I will use the dump(
 ##### Figure 4. Two Pickle functions, dump() and load(), used in developer-defined functions to write and read binary data. 
 
 For the first function, write_data_to_file, a file object is created using the .open() function, which takes a file, file_name, and access mode, ‘wb’, as arguments.  Next we reference the pickle module and call out the function dump, with pickle.dump(). This function’s parameters are an object—what you want to dump, and a file—where you want to dump it (see Figure 3); the object passed in this function will be serialized and stored to the given file. Lastly, for this function, we close the file. 
+
 Again, for the next function read_data_from_file()we initiate the file object using .open(). Then we use the load function from the pickle module, pickle.load(), to grab and convert the binary data that is stored in the file back to an object. Finally, we close the file and return the object saved to variable list_of_data. 
 
 ## Exception/Error Handling
 
 When a program runs into a problem it raises an exception, or an error message that something has happened which cannot be processed by the program [5]. Often, these error messages can be lengthy and daunting; although they are useful to the developer, the message may not be appealing or readable to the user. Additionally, it is typical that the program crashes and ends immediately upon raising an exception. We can avert this by trapping the problem using exception handling. The try-except method is a basic way of handling exceptions/errors. 
+
 A reason why the developer may want to use exception handling is to display the error message more concisely, rather than parsing through a lengthy default error message. A concise, readable message is also useful for the end-user, should they run into any issues using a program. 
+
 Errors fall into different levels, from generic to specific. The format of a try-except block is organized such that specific errors are captured first. 
+
 Similar to the pickle module, before we can use any functions associated with exception handling we need to import the sys module using import sys [4]. 
 Below (Figure 5) try-except blocks are used to sift through errors, from most to least specific. The first try-except block finds errors with file-handling, while the second try-error block looks for errors regarding saving/writing data to the binary file. 
 
